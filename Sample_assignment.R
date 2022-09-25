@@ -15,14 +15,14 @@ ggplot(data = mtcars, aes(x=mpg)) +
 
 # Task 4: Create a commit and push your work.
 
-
 # Task 5: Read in the iris.csv dataset
-
+iris <- read.csv('iris.csv', sep = ',')
 
 # Task 6: Create a barplot of the number of observations by species.
-
+ggplot(data=iris, aes(x = Species, fill = Species)) +
+  geom_bar() +
+  theme_bw() 
 
 # Task 7: Create a commit and push your work.
-
 
 # Task 8: Create a pull request.
